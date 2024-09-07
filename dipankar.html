@@ -1,0 +1,354 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Portfolio Website | Dipankar Sau</title>
+
+      <link rel="stylesheet" href="css/style.css" />
+
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+
+      <style>
+          /* Color variables */
+          :root {
+              --primary-color: #007bff; /* Blue color */
+              --secondary-color: #6c757d; /* Gray color */
+              --background-color: #f8f9fa; /* Light background */
+              --text-color: #212529; /* Dark text */
+          }
+
+          /* Body background */
+          body {
+              background: var(--background-color);
+              color: var(--text-color);
+              font-family: Arial, sans-serif;
+          }
+
+          /* Navbar styles */
+          .navbar {
+              background-color: var(--primary-color);
+          }
+
+          .navbar-brand {
+              font-weight: bold;
+              color: var(--background-color) !important;
+          }
+
+          .navbar-nav .nav-link {
+              color: var(--background-color) !important;
+          }
+
+          .navbar-nav .nav-link:hover {
+              color: #e2e6ea !important;
+          }
+
+          /* Hero section styles */
+          .hero {
+              height: 100vh;
+              background-image: url("dipu.JPEG");
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: cover;
+              background-attachment: fixed;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+          }
+
+          .hero h1 {
+              color: var(--background-color);
+              font-size: 3rem;
+              font-weight: 600;
+              margin-bottom: 0.5rem;
+          }
+
+          .hero h2 {
+              color: var(--background-color);
+              font-size: 1.5rem;
+              margin-bottom: 1.5rem;
+          }
+
+          .hero a.btn {
+              background-color: var(--primary-color);
+              color: var(--background-color);
+              font-size: 1.25rem;
+              padding: 0.75rem 1.5rem;
+              border-radius: 5px;
+          }
+
+          .hero a.btn:hover {
+              background-color: #0056b3;
+              color: var(--background-color);
+          }
+
+          /* Skills section */
+          #skills {
+              padding: 5rem 0;
+          }
+
+          #skills h2 {
+              font-size: 2.5rem;
+              margin-bottom: 1rem;
+          }
+
+          #skills .card {
+              border: none;
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+              border-radius: 10px;
+              transition: transform 0.3s ease-in-out;
+          }
+
+          #skills .card:hover {
+              transform: scale(1.05);
+          }
+
+          /* Portfolio section */
+          #portfolio {
+              padding: 5rem 0;
+          }
+
+          #portfolio h2 {
+              font-size: 2.5rem;
+              margin-bottom: 1rem;
+          }
+
+          .card-wrapper {
+              margin-bottom: 1.5rem;
+          }
+
+          /* Contact section */
+          #contact {
+              background-image: url("dipu2.jpg");
+              background-size: cover;
+              background-attachment: fixed;
+              background-position: center;
+              padding: 5rem 0;
+          }
+
+          #contact h2 {
+              color: var(--background-color);
+              font-size: 2.5rem;
+              margin-bottom: 2rem;
+          }
+
+          .form-floating textarea {
+              height: 150px;
+          }
+
+          .form-floating label {
+              padding-left: 0.75rem;
+          }
+
+          .btn-outline-light {
+              border: 2px solid var(--background-color);
+              color: var(--background-color);
+          }
+
+          .btn-outline-light:hover {
+              background-color: var(--background-color);
+              color: var(--background-color);
+          }
+
+          /* CV section */
+          #cv {
+              padding: 5rem 0;
+          }
+
+          #cv img {
+              border-radius: 50%;
+              border: 5px solid var(--secondary-color);
+          }
+
+          #cv h2 {
+              margin-top: 1rem;
+              margin-bottom: 1rem;
+          }
+
+          .contact-info i {
+              color: var(--primary-color);
+          }
+
+          .social-icons a {
+              margin: 0 0.5rem;
+              color: var(--background-color);
+          }
+
+          .social-icons a:hover {
+              color: var(--primary-color);
+          }
+      </style>
+  </head>
+  <body>
+
+  <header class="bg-dark fixed-top">
+      <nav class="container-xxl navbar navbar-expand-lg py-3 navbar-dark">
+          <div class="container-fluid">
+              <a class="navbar-brand fs-3" href="#">Dipankar Sau</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item mx-2">
+                          <a class="nav-link" href="#skills">SKILLS</a>
+                      </li>
+                      <li class="nav-item mx-2">
+                          <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+                      </li>
+                      <li class="nav-item mx-2">
+                          <a class="nav-link" href="#about">ABOUT</a>
+                      </li>
+                      <li class="nav-item mx-2">
+                          <a class="nav-link" href="#contact">CONTACT</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </header>
+
+  <section class="hero">
+      <div class="text-center">
+          <h1 class="h1 fw-medium fst-italic">Dipankar Sau</h1>
+          <h2>Computer Science and Engineering <br /> Student</h2>
+          <a href="#skills" class="btn btn-lg fs-6 fw-medium mt-5">TELL ME MORE</a>
+      </div>
+  </section>
+
+  <section class="container py-5" id="skills">
+      <div class="row mt-4 py-3">
+          <div class="col-12 d-flex flex-column text-center justify-content-center">
+              <h2>SKILLS</h2>
+              <h5 class="text-secondary fw-normal py-2 fst-italic">Continuously improving my skills and knowledge in the field.</h5>
+          </div>
+      </div>
+      <div class="row d-flex justify-content-between mx-0">
+          <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white p-4" style="width: 25rem">
+              <i class="text-white bg-primary d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-cart-shopping"></i>
+              <h3 class="mt-4 h4">Front-end Development</h3>
+              <p class="text-center">Proficient in HTML, CSS, and JavaScript. Experienced in responsive web design, building user-friendly interfaces, and using modern frameworks like ReactJS.</p>
+          </div>
+          <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white p-4" style="width: 25rem">
+              <i class="text-white bg-primary d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-laptop"></i>
+              <h3 class="mt-4 h4">Back-end Development</h3>
+              <p class="text-center">Skilled in server-side programming using technologies like Node.js and Express. Experience working with databases such as MongoDB and MySQL.</p>
+          </div>
+          <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white p-4" style="width: 25rem">
+              <i class="text-white bg-primary d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-mobile-screen-button"></i>
+              <h3 class="mt-4 h4">Mobile App Development</h3>
+              <p class="text-center">Proficient in developing mobile apps for iOS and Android using frameworks like React Native. Experienced in building engaging and intuitive mobile user interfaces.</p>
+          </div>
+      </div>
+  </section>
+
+  <section class="container py-5" id="portfolio">
+      <div class="row mt-4 py-3">
+          <div class="col-12 d-flex flex-column text-center justify-content-center">
+              <h2>PORTFOLIO</h2>
+              <h5 class="text-secondary fw-normal py-2 fst-italic">A collection of projects I've worked on.</h5>
+          </div>
+      </div>
+      <div class="row d-flex justify-content-between mx-0">
+          <div class="col-lg-3 px-md-3 px-0 col-md-4 card-wrapper">
+              <div class="card mt-4">
+                  <div class="card-body text-center">
+                      <h6 class="card-title">Responsive Landing Page</h6>
+                      <p class="card-text text-secondary">HTML/CSS/Bootstrap</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 px-md-3 px-0 col-md-4 card-wrapper">
+              <div class="card mt-4">
+                  <div class="card-body text-center">
+                      <h6 class="card-title">Calculator App</h6>
+                      <p class="card-text text-secondary">HTML/CSS/JavaScript</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 px-md-3 px-0 col-md-4 card-wrapper">
+              <div class="card mt-4">
+                  <div class="card-body text-center">
+                      <h6 class="card-title">Blog Website</h6>
+                      <p class="card-text text-secondary">HTML/CSS/PHP</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="container py-5" id="about">
+      <div class="row mt-4 py-3">
+          <div class="col-12 d-flex flex-column text-center justify-content-center">
+              <h2>ABOUT</h2>
+              <h5 class="text-secondary fw-normal py-2 fst-italic">Get to know more about me.</h5>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-6 d-flex align-items-center">
+              <img src="dipu3.jpg" alt="Dipankar Sau" class="img-fluid rounded-circle mx-auto d-block" style="width: 250px;">
+          </div>
+          <div class="col-md-6">
+              <h3>Hi, I'm Dipankar Sau</h3>
+              <p>I am a passionate Computer Science and Engineering student with a focus on web and mobile development. I love to create interactive and user-friendly applications and am constantly learning new technologies to enhance my skill set.</p>
+              <div class="hire-text text-center">
+                  <h2>Hire Me</h2>
+                  <p>If you're interested in working with me or want to discuss a project, feel free to get in touch!</p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="container py-5" id="contact">
+      <div class="row mt-4 py-3">
+          <div class="col-12 d-flex flex-column text-center justify-content-center">
+              <h2>CONTACT</h2>
+              <h5 class="text-secondary fw-normal py-2 fst-italic">I'd love to hear from you!</h5>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-6">
+              <form>
+                  <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="name" placeholder="Your Name">
+                      <label for="name">Name</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="email" placeholder="Your Email">
+                      <label for="email">Email</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                      <textarea class="form-control" id="message" placeholder="Your Message"></textarea>
+                      <label for="message">Message</label>
+                  </div>
+                  <button type="submit" class="btn btn-outline-light">Send Message</button>
+              </form>
+          </div>
+          <div class="col-md-6">
+              <div class="contact-info">
+                  <p><i class="fa-solid fa-envelope"></i> dipankarsau@example.com</p>
+                  <p><i class="fa-solid fa-phone"></i> 6297569865 </p>
+                  <p><i class="fa-solid fa-location-dot"></i>barasat, kolkata</p>
+                  <div class="social-icons mt-3">
+                      <a href="https://linkedin.com/in/dipankarsau" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                      <a href="https://github.com/dipankarsau" target="_blank"><i class="fa-brands fa-github"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <footer class="bg-dark text-light py-4">
+      <div class="container text-center">
+          <p>&copy; 2024 Dipankar Sau. All rights reserved.</p>
+      </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO6r8I2Uq0Bz6xkFflTj7Z6H6rX1fRT9nbo7djg8uN1rjtFHDSoJ" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-VH7xgFwtXmc0D4lu5sH3GCa22xlf5w1ZcP/ktgC7StxZZq5bihC1qObG/fF3E4K" crossorigin="anonymous"></script>
+
+  </body>
+  </html>
